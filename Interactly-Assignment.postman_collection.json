@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "4bcef7b4-e7a6-452e-b95b-d36dea01b3d7",
+		"name": "Interactly-Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19692554"
+	},
+	"item": [
+		{
+			"name": "createContact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Mark\",\r\n    \"lastName\" : \"Wilson\",\r\n    \"email\": \"wilson@gmail.com\",\r\n    \"mobileNum\": 94312343256\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/createContact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"createContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getContact",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Mark\",\r\n    \"lastName\" : \"Wilson\",\r\n    \"email\": \"wilson@gmail.com\",\r\n    \"mobileNum\": 94312343256\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/getContact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateContact",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"rick@gmail.com\",\r\n    \"mobileNum\": 1234567890\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/updateContact/78f5a18a-dcee-4904-a747-1be8ceceead8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"updateContact",
+						"78f5a18a-dcee-4904-a747-1be8ceceead8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteContact",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/78f5a18a-dcee-4904-a747-1be8ceceead8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"78f5a18a-dcee-4904-a747-1be8ceceead8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
